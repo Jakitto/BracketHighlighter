@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -11,9 +11,9 @@
       
       
       
-        <link rel="shortcut icon" href="../assets/images/favicon.ico">
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.0.5">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.6.0">
     
     
       
@@ -24,9 +24,9 @@
       <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-9c62e3c932.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-72266791c5.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-02ce7adcc2.palette.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-f78e5cb881.palette.css">
       
     
     
@@ -62,13 +62,14 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <header class="md-header">
+      <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="BracketHighlighter Documentation" class=" md-icon md-icon--home  md-header-nav__button">
-          
-        </a>
+        
+          <a href=".." title="BracketHighlighter Documentation" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -88,15 +89,21 @@
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
 <div class="md-search" data-md-component="search">
-  <div class="md-search__overlay"></div>
+  <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result"></div>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
       </div>
     </div>
   </div>
@@ -104,9 +111,9 @@
         
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
+        <div class="md-header-nav__source">
+          
             
-              
 
 
   
@@ -125,14 +132,16 @@
     </div>
   </a>
 
-            
-          </div>
+          
+        </div>
       </div>
     </div>
   </nav>
 </header>
     
     <div class="md-container">
+      
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -140,11 +149,11 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-icon md-icon--home  md-nav__button">
-      
-    </i>
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
     BracketHighlighter Documentation
   </label>
   
@@ -174,83 +183,131 @@
     
       
       
+      
+
+
   <li class="md-nav__item">
-    
-      <a href=".." title="About BracketHighlighter" class="md-nav__link">
-        About BracketHighlighter
-      </a>
-    
+    <a href=".." title="About BracketHighlighter" class="md-nav__link">
+      About BracketHighlighter
+    </a>
   </li>
 
     
       
       
+      
+
+
   <li class="md-nav__item">
-    
-      <a href="../installation/" title="Installation" class="md-nav__link">
-        Installation
-      </a>
-    
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
   </li>
 
     
       
       
+      
+
+
   <li class="md-nav__item">
-    
-      <a href="../usage/" title="Basic Usage" class="md-nav__link">
-        Basic Usage
-      </a>
-    
+    <a href="../usage/" title="Basic Usage" class="md-nav__link">
+      Basic Usage
+    </a>
   </li>
 
     
       
       
+      
+
+
   <li class="md-nav__item">
-    
-      <a href="../customize/" title="Customizing" class="md-nav__link">
-        Customizing
-      </a>
-    
+    <a href="../customize/" title="Customizing" class="md-nav__link">
+      Customizing
+    </a>
   </li>
 
     
       
       
-  <li class="md-nav__item">
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Extended Regex Guide
+      </label>
     
     <a href="./" title="Extended Regex Guide" class="md-nav__link md-nav__link--active">
       Extended Regex Guide
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-the-latest-backrefs" title="Getting the Latest Backrefs" class="md-nav__link">
+    Getting the Latest Backrefs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-backrefs-in-brackethighlighter-plugins" title="Using Backrefs in BracketHighlighter Plugins" class="md-nav__link">
+    Using Backrefs in BracketHighlighter Plugins
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
       
       
+      
+
+
   <li class="md-nav__item">
-    
-      <a href="../contributing/" title="Contributing &amp; Support" class="md-nav__link">
-        Contributing &amp; Support
-      </a>
-    
+    <a href="../contributing/" title="Contributing &amp; Support" class="md-nav__link">
+      Contributing &amp; Support
+    </a>
   </li>
 
     
       
       
+      
+
+
   <li class="md-nav__item">
-    
-      <a href="../license/" title="License" class="md-nav__link">
-        License
-      </a>
-    
+    <a href="../license/" title="License" class="md-nav__link">
+      License
+    </a>
   </li>
 
     
@@ -293,6 +350,8 @@
   
 </li>
       
+      
+      
     </ul>
   
 </nav>
@@ -303,10 +362,10 @@
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
-               
-                 <a href="https://github.com/facelessuser/BracketHighlighter/edit/master/docs/extended-regex.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
-               
               
+                
+                  <a href="https://github.com/facelessuser/BracketHighlighter/edit/master/docs/extended-regex.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
                 
                   <h1>Extended Regex Guide</h1>
                 
@@ -321,18 +380,15 @@
 <div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">backrefs</span> <span class="nn">as</span> <span class="nn">bre</span>
 </pre></div>
 
-
 <p>Backrefs does provide a wrapper for all of Re's normal functions such as <code>match</code>, <code>sub</code>, etc., but it is recommended to pre-compile your search patterns <strong>and</strong> your replace patterns for the best performance; especially if you plan on reusing the same pattern multiple times.  As Re does cache a certain amount of the non-compiled calls, you will be spared from some of the performance hit, but Backrefs does not cache the pre-processing of search and replace patterns.</p>
 <p>To use pre-compiled functions, you compile the search pattern with <code>compile_search</code>.  If you want to take advantage of replace Backrefs, you need to compile the replace pattern as well.  Notice the compiled pattern is fed into the replace pattern; you can feed the replace compiler the string representation of the search pattern as well, but the compiled pattern will be faster and is the recommended way.</p>
 <div class="codehilite"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="n">bre</span><span class="o">.</span><span class="n">compile_search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;somepattern&#39;</span><span class="p">,</span> <span class="n">flags</span><span class="p">)</span>
 <span class="n">replace</span> <span class="o">=</span> <span class="n">bre</span><span class="o">.</span><span class="n">compile_replace</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1 some replace pattern&#39;</span><span class="p">)</span>
 </pre></div>
 
-
 <p>Then you can use the complied search pattern and replace</p>
 <div class="codehilite"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">pattern</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">replace</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;sometext&#39;</span><span class="p">)</span>
 </pre></div>
-
 
 <p>or</p>
 <div class="codehilite"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">pattern</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;sometext&#39;</span><span class="p">)</span>
@@ -340,18 +396,22 @@
     <span class="n">text</span> <span class="o">=</span> <span class="n">replace</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>  <span class="c1"># similar to m.expand(template)</span>
 </pre></div>
 
-
 <p>To use the non-compiled search/replace functions, you call them just them as you would in Re; the names are the same.  Methods like <code>sub</code> and <code>subn</code> will compile the replace pattern on the fly if given a string.</p>
 <div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">bre</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;somepattern&#39;</span><span class="p">,</span> <span class="s1">&#39;some text&#39;</span><span class="p">,</span> <span class="n">bre</span><span class="o">.</span><span class="n">UNICODE</span> <span class="o">|</span> <span class="n">bre</span><span class="o">.</span><span class="n">DOTALL</span><span class="p">):</span>
     <span class="c1"># do something</span>
 </pre></div>
-
 
 <p>If you want to replace without compiling, you can use the <code>expand</code> method.</p>
 <div class="codehilite"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">bre</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;sometext&#39;</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
     <span class="n">text</span> <span class="o">=</span> <span class="n">bre</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;replace pattern&#39;</span><span class="p">)</span>
 </pre></div>
+                
+                  
+                
+              
+              
+                
               
             </article>
           </div>
@@ -429,7 +489,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application-f7ac33b6fb.js"></script>
+      <script src="../assets/javascripts/application-7018102a8b.js"></script>
       <script>app.initialize({url:{base:".."}})</script>
       
     

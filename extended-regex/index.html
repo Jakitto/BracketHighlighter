@@ -240,6 +240,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Extended Regex Guide
@@ -252,6 +254,8 @@
       
 <nav class="md-nav md-nav--secondary">
   
+  
+    
   
   
     <label class="md-nav__title" for="toc">Table of contents</label>
@@ -325,6 +329,8 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -367,9 +373,8 @@
                   <a href="https://github.com/facelessuser/BracketHighlighter/edit/master/docs/extended-regex.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Extended Regex Guide</h1>
-                
-                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
+                <h1 id="extended-regex-guide">Extended Regex Guide<a class="headerlink" href="#extended-regex-guide" title="Permanent link"></a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
 <p><abbr title="BracketHighlighter">BH</abbr> uses Python's Re regular expression engine, but it also adds some additional back references to aid in the creation of bracket patterns.  This is done with a custom wrapper called Backrefs that was originally written for <a href="https://github.com/facelessuser/RegReplace">RegReplace</a>.</p>
 <p>Backrefs was written to add various additional back references that are known to some regex engines, but not to Python's Re.  Backrefs adds: <code>\p</code>, <code>\P</code>, <code>\u</code>, <code>\U</code>, <code>\l</code>, <code>\L</code>, <code>\Q</code> or <code>\E</code> (though <code>\u</code> and <code>\U</code> are replaced with <code>\c</code> and <code>\C</code>).</p>
 <p>You can read more about Backrefs' features in <a href="http://facelessuser.github.io/backrefs/">Backrefs' documentation</a>.</p>
